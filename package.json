@@ -1,0 +1,19 @@
+{
+  "name": "parceller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^3.12.2",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.0.5"
+  },
+  "scripts": {
+    "start:dev": "parcel index.html -p 4000 ",
+    "build:prod": "parcel build index.html"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
