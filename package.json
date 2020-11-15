@@ -18,7 +18,7 @@
     "scripts": {
         "start:dev": "parcel index.html -p 4000 ",
         "build:prod": "parcel build index.html",
-        "lint": "eslint '*/**/*.{js,ts,tsx}' --fix"
+        "lint": "eslint '*/**/*.{js,ts,tsx}' "
     },
     "dependencies": {
         "react": "^17.0.1",
@@ -31,7 +31,8 @@
     },
     "lint-staged": {
         "*.{js,ts,tsx}": [
-            "eslint --fix"
+          "prettier --write --loglevel=error",
+          "eslint --fix"
         ]
     }
 }
