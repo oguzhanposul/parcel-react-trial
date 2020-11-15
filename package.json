@@ -34,7 +34,7 @@
         }
     },
     "lint-staged": {
-        "client/": [
+        "client/**/*.{ts,tsx}": [
             "prettier --write --loglevel=error",
             "eslint"
         ]
