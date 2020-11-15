@@ -1,19 +1,37 @@
 {
-  "name": "parceller",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "less": "^3.12.2",
-    "parcel-bundler": "^1.12.4",
-    "typescript": "^4.0.5"
-  },
-  "scripts": {
-    "start:dev": "parcel index.html -p 4000 ",
-    "build:prod": "parcel build index.html"
-  },
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+    "name": "parceller",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.7.0",
+        "@typescript-eslint/parser": "^4.7.0",
+        "eslint": "^7.13.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.21.5",
+        "less": "^3.12.2",
+        "parcel-bundler": "^1.12.4",
+        "prettier": "^2.1.2",
+        "typescript": "^4.0.5"
+    },
+    "scripts": {
+        "start:dev": "parcel index.html -p 4000 ",
+        "build:prod": "parcel build index.html",
+        "lint": "eslint '*/**/*.{js,ts,tsx}' --fix"
+    },
+    "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": [
+            "eslint --fix"
+        ]
+    }
 }
