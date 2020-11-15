@@ -18,7 +18,7 @@
     "scripts": {
         "start:dev": "parcel index.html -p 4000 ",
         "build:prod": "parcel build index.html",
-        "lint": "eslint '*/**/*.{js,ts,tsx}' "
+        "lint": "eslint client/"
     },
     "dependencies": {
         "react": "^17.0.1",
