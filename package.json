@@ -22,7 +22,7 @@
         "start:dev": "parcel index.html -p 4000 ",
         "build:prod": "parcel build index.html",
         "lint": "eslint client/ --fix",
-        "format": "prettier --write"
+        "format": "pretty-quick --staged"
     },
     "dependencies": {
         "react": "^17.0.1",
@@ -36,7 +36,7 @@
     "lint-staged": {
         "client/": [
             "prettier --write --loglevel=error",
-            "eslint --fix"
+            "eslint"
         ]
     }
 }
