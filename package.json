@@ -22,7 +22,7 @@
     "scripts": {
         "start:dev": "parcel index.html -p 4000 ",
         "build:prod": "parcel build index.html",
-        "lint": "eslint --fix"
+        "lint": "eslint client/**/*.{ts,tsx} --fix "
     },
     "dependencies": {
         "react": "^17.0.1",
@@ -35,8 +35,8 @@
     },
     "lint-staged": {
         "client/**/*.{ts,tsx}": [
-            "pretty-quick",
-            "git add"
+            "yarn lint",
+            ""
         ]
     }
 }
