@@ -36,7 +36,8 @@
     "lint-staged": {
         "client/**/*.{ts,tsx}": [
             "yarn lint",
-            "pretty-quick"
+            "pretty-quick",
+            "git add"
         ]
     }
 }
