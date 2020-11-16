@@ -35,7 +35,8 @@
     },
     "lint-staged": {
         "client/**/*.{ts,tsx}": [
-            "eslint ."
+            "pretty-quick",
+            "git add"
         ]
     }
 }
