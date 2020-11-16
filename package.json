@@ -30,13 +30,13 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "pretty-quick"
+            "pre-commit": "lint-staged"
         }
     },
     "lint-staged": {
         "client/**/*.{ts,tsx}": [
             "yarn lint",
-            ""
+            "pretty-quick"
         ]
     }
 }
